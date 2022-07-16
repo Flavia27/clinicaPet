@@ -29,6 +29,19 @@ $retorno = $objCliente->retornoBD->fetch_object();
                     <div id="cpf" class="form-text"></div>
                 </div>
               
+                <!-- Novo - Acrescentar as informações de endereço e celular ao registro do cliente. -->
+                <div class="mb-3">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="endereco-cliente" aria-describedby="enderecoHelp" name="enderecoCliente" value="<?php echo $retorno->endereco_cliente; ?>" >
+                    <div id="endereco" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="celular-cliente" aria-describedby="celularHelp" name="celularCliente" value="<?php echo $retorno->celular_cliente; ?>" >
+                    <div id="celular" class="form-text"></div>
+                </div>
+                <!-- Novo - FIM - Acrescentar as informações de endereço e celular ao registro do cliente. -->
+                
                 <input type="hidden" value="<?php echo $retorno->id_cliente; ?>" name="idCliente" >
                 <input type="hidden" name="formEditarCliente">
                 <button type="submit" class="btn btn-primary">Submit</button>
