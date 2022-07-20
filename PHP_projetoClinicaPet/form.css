@@ -1,0 +1,88 @@
+body{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+.form section{
+    border: 1px solid rgb(218, 217, 217);
+    border-radius: 8px;
+    background-color: rgba(164, 226, 224, 0.8);
+
+    overflow: hidden;
+
+    width: 60vw;
+    min-height: 90vh;
+    margin: 6vh auto;
+    padding: 16px 20px;
+}
+
+.form section h3{
+    text-align: center;
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form section .columns{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 2px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.form section .columns p,
+.form section .columns span{
+    margin-left: 20px;
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+.form section .columns input[type="text"],
+.form section .columns input[type="number"],
+.form section .columns select { 
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+
+    border-radius: 8px;
+    height: 42px;
+    padding: 4px;
+}
+
+.form section .columns span,
+.form section .columns input,
+.form section .columns select  { 
+    margin: auto 0;
+}
+
+.button {
+    width: 100%;
+    align-items: center;
+    margin-left: 40%;
+}
+
+button[type="submit"]{
+    padding: 8px 16px;
+    background-color: #017893;
+    color: white;
+    font-size: 18px;
+
+    border-radius: 4px;
+    width: 20%;
+    margin-top: 32px;
+    
+    cursor: pointer;
+}
