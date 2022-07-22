@@ -1,0 +1,17 @@
+body{
+  background-color: #4e73df;
+  padding-top: 30px;
+  padding: left;
+  background-attachment:center;
+}
+h1{
+    text-align: right;
+}
+.container{
+    background-color: white;
+    margin-left: auto;
+    justify-content: center
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
